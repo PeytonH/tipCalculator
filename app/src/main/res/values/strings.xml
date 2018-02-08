@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">tipCalculator_counter_hartzell</string>
+    <string name="totalText">Total Amount:</string>
+    <string name="peopleText"># of People:</string>
+    <string name="tipPercentText">Tip Percent:</string>
+    <string name="tipAmountText">Tip Amount:</string>
+    <string name="toPayText">Total to Pay:</string>
+    <string name="perPersonText">Total per Person:</string>
+    <string name="radioButton1">15%</string>
+    <string name="radioButton2">20%</string>
+    <string name="radioButton3">Custom:</string>
+    <string name="resetButton">Reset</string>
+    <string name="calculate">Calculate</string>
+</resources>

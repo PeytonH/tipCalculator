@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.skybreaker.tipcalculator_counter_hartzell.MainActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/totalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:layout_column="0"
+                android:text="@string/totalText" />
+
+            <EditText
+                android:id="@+id/txtAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/peopleAmount"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dip"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="@string/peopleText" />
+
+            <EditText
+                android:id="@+id/txtPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tipPercentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="@string/tipPercentText" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioGroup
+                android:id="@+id/RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_span="3"
+                android:checkedButton="@+id/radioButton1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButton1"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButton2"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButton3"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/txtTipOther"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numeric="decimal" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="@string/resetButton" />
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="@string/calculate" />
+        </TableRow>
+
+        <View
+            android:layout_height="2px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#DDFFDD" />
+
+        <TableRow
+            android:paddingBottom="10dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/tipAmountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:layout_column="0"
+                android:text="@string/tipAmountText" />
+
+            <TextView
+                android:id="@+id/txtTipAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:layout_column="2"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/toPayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:layout_column="0"
+                android:text="@string/toPayText" />
+
+            <TextView
+                android:id="@+id/txtTotalToPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:layout_column="2"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/perPersonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:layout_column="0"
+                android:text="@string/perPersonText" />
+
+            <TextView
+                android:id="@+id/txtTipPerPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingBottom="20dip"
+                android:layout_column="2"
+                android:layout_span="2" />
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
